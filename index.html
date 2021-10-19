@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Front end web development" content="complate web site">
+    <meta name="keywords" content="html, css">
+    <meta name="author" content="Fuzayil">
+    <title>Front End Design</title>
+    <link rel="stylesheet" href="frontend.css">
+    <link rel="stylesheet" href="popup.css">
+    <link rel="shortcut icon" href="images/icon.ico" type="image/x-icon">
+    <script type="text/javascript" src="frontend.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="headermenu clear">
+            <nav class="navbar clear">
+                <img src="images/gtworld.png" alt="front end logo">
+                <input type="text" name="search" class="mysearchbar" size="20" placeholder="Search...">
+                <input type="submit" value="Search" size="2.5" class="mysearchbutton">
+
+                <ul class="mymenu">
+                    <li class="drop">
+                        <a href="javascript:void(0)" class="active">Menu</a>
+                        <div class="drop-content">
+                            <a href="index.html">Home</a>
+                            <a href="blog.html">Blog</a>
+                            <a href="media.html">Media</a>
+                            <a href="signup.html">SignUp</a>
+                            <a href="login.html">Login</a>
+                            <a href="contact.html">Contact</a>
+                            <a href="about.html">About</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="blog.html">Blog</a>
+                    </li>
+                    <li class="drop">
+                        <a href="javascript:void(0)">Media</a>
+                        <div class="drop-content">
+                            <a href="media.html">Video</a>
+                            <a href="media.html">Audio</a>
+                            <a href="media.html">Photos</a>
+                            <a href="media.html">Slides</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="signup.html">SignUp</a>
+                    </li>
+                    <li>
+                        <a href="login.html">Login</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="site-container">
+        <div class="top-site">
+            <h1>front end developers</h1>
+            <h2>We build awasome web design... Join us today!</h2>
+            <img src="images/earth.png" alt="" class="green-earth">
+        </div>
+        <div class="middle-site">
+            <div class="first-middle-site">
+                <img src="images/bird.gif" alt="">
+                <h2>Peaciful Developer</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione assumenda quae, </p>
+            </div>
+            <hr>
+            <div class="second-middle-site">
+                <div>
+                    <h2>Our Services</h2>
+                    <div class="our-services">
+                        <img src="images/work1.png" class="service-1-img" alt="">
+                        <h3>Template Design</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In tempore et dolorem necessitatibus totam corporis accusantium eaque, fugit iusto, quaerat illo id sequi, nobis non officiis hic blanditiis esse. Repellat.</p>
+                    </div>
+                    <div class="our-services">
+                        <img src="images/work2.png" class="service-2-img" alt="">
+                        <h3>Web development</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi numquam tempora magnam est! Quam debitis natus maxime voluptatum nemo. Expedita accusantium reprehenderit perspiciatis quo impedit iusto? Deleniti molestiae possimus
+                            quae.
+                        </p>
+                    </div>
+                </div>
+                <hr>
+            </div>
+            <div class="third-middle-site">
+                <div>
+                    <h2>Need our services?</h2>
+                    <h3>Hit the contact box and drop us a message</h3>
+                    <p class="contact-message">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore assumenda aperiam beatae repudiandae, accusantium numquam?</p>
+                    <!-- <a class="myButton" href="mailto:fuzayl96@gmail.com">Contact us</a> -->
+                </div>
+            </div>
+        </div>
+        <!-- Learning the power of javascript -->
+        <div class="MyPop">
+            <div id="MessageBox">
+                <!-- starting box popup -->
+                <div id="popupContact">
+                    <!-- contact form -->
+                    <form action="index.html" id="form" method="POST" name="form">
+                        <img src="images/icon1.png" id="close" onclick="close_form()" alt="">
+                        <h2>Contact Us</h2>
+                        <input type="text" name="name" id="name" placeholder="Name">
+                        <input type="email" name="email" placeholder="Email" id="email">
+                        <textarea name="message" placeholder="Message" id="msg"></textarea>
+                        <a href="javascript:input_fields()" id="submit">Send Message</a>
+                    </form>
+                </div>
+                <!-- This is and of popup form -->
+            </div>
+            <a class="myButton" id="popup" onclick="show_form()">Contact us</a>
+            <!-- This is a and of popup message -->
+        </div>
+        <div class="bottom-site">
+            <a href="facebook.com" class="footer-link">Facebook</a>
+            <a href="">Twitter</a>
+            <a href="">Instagram</a>
+            <p class="copyright">&copy;2021 Fuzayil Ubaydullayev @ UFTecnologies</p>
+        </div>
+    </div>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
